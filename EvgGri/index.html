@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/favicon.png">
+  <script defer src="./assets/js/main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+          viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Tailblocks</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900">Акции</a>
+        <a class="mr-5 hover:text-gray-900">Поиск</a>
+        <a class="mr-5 hover:text-gray-900">Управление бронированием</a>
+      </nav>
+      <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <!-- алгоритм бронирования -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex flex-wrap w-full">
+        <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <!-- <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path> -->
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Шаг 1</h2>
+              <p class="leading-relaxed">Выбрать дату и время съемки;</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <!-- <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path> -->
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Шаг 2</h2>
+              <p class="leading-relaxed">Выбрать количество участников;</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <!-- <circle cx="12" cy="5" r="3"></circle> -->
+                <!-- <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path> -->
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Шаг 3</h2>
+              <p class="leading-relaxed">Выбрать желаемую локацию для съемки, соответствующую условиям выше;</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <!-- <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path> -->
+                <!-- <circle cx="12" cy="7" r="4"></circle> -->
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Шаг 4</h2>
+              <p class="leading-relaxed">Зарезервировать конкретные зоны на территории выбранной локации;</p>
+            </div>
+          </div>
+          <div class="flex relative pb-12">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <!-- <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle> -->
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Шаг 5</h2>
+              <p class="leading-relaxed">Определить перечень дополнительных услуг;</p>
+            </div>
+          </div>
+          <div class="flex relative">
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <!-- <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path> -->
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Шаг 6</h2>
+              <p class="leading-relaxed">Оформить заказ.</p>
+            </div>
+          </div>
+        </div>
+        <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+          src="./assets/images/people/1.jpg" alt="step">
+        <div class="flex justify-center">
+          <button
+            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+          <button
+            class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <!--  -->
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+      <div class="text-center lg:w-2/3 w-full">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Девиз компании «Фокус»: Сделай жизнь
+          ярче!</h1>
+        <p class="mb-8 leading-relaxed">Главная цель компании – сохранить самые яркие моменты жизни клиентов на долгие
+          годы.</p>
+      </div>
+    </div>
+  </section>
+  <!-- слайдер -->
+  <section class="bg-gray-50 font-light pg-lib-item py-16 text-gray-500">
+    <div class="container mx-auto px-4 relative" data-pg-class-style="container" data-pg-class-style-inline="">
+      <h2 class="font-medium mb-1 text-blue-600 text-center">Отзывы</h2>
+      <h3 class="font-bold mb-8 text-4xl text-center text-gray-800">What Our Clients Are Saying</h3>
+      <div class="p-4 relative z-0 lg:px-16"
+        data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;now&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;#gt#div#gt#[data-slider-elem=pgia-slide]:nth-of-type(1)&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;set&quot;,&quot;p&quot;:0,&quot;d&quot;:0,&quot;s&quot;:0.1,&quot;l&quot;:{&quot;pgDom&quot;:{&quot;clone&quot;:1,&quot;ins&quot;:&quot;append&quot;}}}]}]},&quot;pdef&quot;:&quot;true&quot;,&quot;rstr&quot;:&quot;true&quot;,&quot;name&quot;:&quot;CloneSlidesForInfinite&quot;},{&quot;name&quot;:&quot;AutoPlay&quot;,&quot;trg&quot;:&quot;now&quot;,&quot;timer&quot;:&quot;6&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;this&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;set&quot;,&quot;p&quot;:5.98,&quot;d&quot;:0,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;GotoNext&quot;}}}]},{&quot;t&quot;:&quot;[data-slider-elem=pgia-progress-bar]&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;set&quot;,&quot;p&quot;:0,&quot;d&quot;:0,&quot;l&quot;:{&quot;width&quot;:0}},{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:5.98,&quot;l&quot;:{&quot;width&quot;:&quot;100%&quot;},&quot;e&quot;:&quot;Linear.easeNone&quot;}]}]},&quot;rpt&quot;:&quot;-1&quot;,&quot;tcv&quot;:&quot;slider-user-active&quot;,&quot;nopg&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;UserActive&quot;,&quot;trg&quot;:&quot;mouseenter&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;this&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;set&quot;,&quot;p&quot;:0,&quot;d&quot;:0,&quot;l&quot;:{&quot;pgia&quot;:{&quot;pause&quot;:&quot;AutoPlay&quot;}}}]},{&quot;t&quot;:&quot;[data-slider-elem=pgia-progress]&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;autoAlpha&quot;:0}}]}]},&quot;rstr&quot;:&quot;true&quot;,&quot;po&quot;:&quot;true&quot;,&quot;pol&quot;:&quot;UserInactive&quot;},{&quot;name&quot;:&quot;UserInactive&quot;,&quot;trg&quot;:&quot;mouseleave_notouch&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;this&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0.5,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;AutoPlay&quot;}}}]},{&quot;t&quot;:&quot;[data-slider-elem=pgia-progress]&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0.5,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;autoAlpha&quot;:1}}]}]},&quot;rstr&quot;:&quot;true&quot;,&quot;po&quot;:&quot;true&quot;,&quot;pol&quot;:&quot;UserActive&quot;},{&quot;name&quot;:&quot;SwipeLeftToNext&quot;,&quot;trg&quot;:&quot;swipe_left&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;this&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;GotoNext&quot;}}}]}]},&quot;tc&quot;:&quot;no-attr&quot;,&quot;tca&quot;:&quot;data-slider-direction&quot;,&quot;tcv&quot;:&quot;vertical&quot;,&quot;pdef&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;SwipeRightToPrev&quot;,&quot;trg&quot;:&quot;swipe_right&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;this&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;GotoPrev&quot;}}}]}]},&quot;tc&quot;:&quot;no-attr&quot;,&quot;tca&quot;:&quot;data-slider-direction&quot;,&quot;tcv&quot;:&quot;vertical&quot;,&quot;pdef&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;GotoNext&quot;,&quot;trg&quot;:&quot;no&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;[data-slider-elem=pgia-slides-container]&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;scrollTo&quot;:{&quot;dest&quot;:&quot;next&quot;}}}]}]}},{&quot;name&quot;:&quot;GotoPrev&quot;,&quot;trg&quot;:&quot;no&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;[data-slider-elem=pgia-slides-container]&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;scrollTo&quot;:{&quot;dest&quot;:&quot;prev&quot;}}}]}]}},{&quot;name&quot;:&quot;GotoFirst&quot;,&quot;trg&quot;:&quot;no&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;[data-slider-elem=pgia-slides-container]&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;scrollTo&quot;:{&quot;dest&quot;:&quot;first&quot;}}}]}]}},{&quot;name&quot;:&quot;GotoLast&quot;,&quot;trg&quot;:&quot;no&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;[data-slider-elem=pgia-slides-container]&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;scrollTo&quot;:{&quot;dest&quot;:&quot;last&quot;}}}]}]}},{&quot;name&quot;:&quot;SwipeDownToNext&quot;,&quot;trg&quot;:&quot;swipe_down&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;this&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;GotoNext&quot;}}}]}]},&quot;tc&quot;:&quot;attr&quot;,&quot;tca&quot;:&quot;data-slider-direction&quot;,&quot;tcv&quot;:&quot;vertical&quot;,&quot;pdef&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;SwipeUpToPrev&quot;,&quot;trg&quot;:&quot;swipe_up&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;this&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;GotoPrev&quot;}}}]}]},&quot;tc&quot;:&quot;attr&quot;,&quot;tca&quot;:&quot;data-slider-direction&quot;,&quot;tcv&quot;:&quot;vertical&quot;,&quot;pdef&quot;:&quot;true&quot;}]}"
+        data-slider-scrollbar="auto" data-slider-slides-per-page="1" data-slider-direction="horizontal"
+        data-slider-name="pgia-slider">
+        <div class="flex flex-row nowrap overflow-hidden"
+          data-pg-ia-scene="{&quot;dir&quot;:&quot;a&quot;,&quot;s&quot;:&quot;whole&quot;,&quot;snap&quot;:&quot;e&quot;,&quot;pag_t&quot;:&quot;[data-slider-elem=pgia-slide]&quot;,&quot;pag_i&quot;:&quot;^[data-slider-name=pgia-slider]|[data-slider-elem=pgia-pagination-item]&quot;,&quot;pag_clone&quot;:&quot;true&quot;,&quot;pag_pa&quot;:&quot;Current&quot;,&quot;pag_pd&quot;:&quot;-Current&quot;,&quot;pag_inf&quot;:&quot;true&quot;,&quot;pag&quot;:&quot;e&quot;}"
+          data-slider-elem="pgia-slides-container" style="scroll-behavior: auto;">
+          <div class="flex-grow-0 flex-shrink-0 overflow-hidden relative w-full lg:w-6/12"
+            data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;no&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;#gt#div&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0.4,&quot;d&quot;:0.6,&quot;l&quot;:{&quot;autoAlpha&quot;:1},&quot;e&quot;:&quot;Linear.easeNone&quot;}]}],&quot;desc&quot;:&quot;Show the content of the slide. Customize this animation to reveal the content.&quot;},&quot;rstr&quot;:&quot;true&quot;,&quot;po&quot;:&quot;true&quot;,&quot;pol&quot;:&quot;HideContent&quot;,&quot;name&quot;:&quot;ShowContent&quot;},{&quot;name&quot;:&quot;HideContent&quot;,&quot;trg&quot;:&quot;no&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;#gt#div&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.1,&quot;l&quot;:{&quot;autoAlpha&quot;:0}}]}],&quot;desc&quot;:&quot;Hide the content of the slide. Customize this animation to reveal the content.&quot;},&quot;rstr&quot;:&quot;true&quot;,&quot;po&quot;:&quot;true&quot;,&quot;pol&quot;:&quot;ShowContent&quot;}]}"
+            data-pg-ia-scene="{&quot;dir&quot;:&quot;a&quot;,&quot;s&quot;:&quot;custom&quot;,&quot;s_t&quot;:&quot;start&quot;,&quot;s_s&quot;:&quot;end&quot;,&quot;e_t&quot;:&quot;end&quot;,&quot;e_s&quot;:&quot;start&quot;,&quot;l&quot;:[{&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;HideContent&quot;}}},{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0.5,&quot;d&quot;:9,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;ShowContent&quot;}}},{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:9.5,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;HideContent&quot;}}}]}]},&quot;p&quot;:&quot;scroll&quot;,&quot;sc_dir&quot;:&quot;up_down&quot;,&quot;rep&quot;:&quot;true&quot;}]}"
+            data-pg-ia-apply="^[data-slider-name=pgia-slider]|[data-slider-elem=pgia-slide]"
+            data-slider-elem="pgia-slide">
+            <div data-pg-ia-hide="" class="p-4" style="opacity: 0; visibility: hidden;">
+              <div class="bg-white p-10 relative rounded-lg shadow-lg">
+                <p class="font-light mb-5">Спасибо большое! Локация "Черная жемчужина" просто супер! Все в бурных
+                  эмоциях, фото получились просто огонь!</p>
+                <div class="flex items-center">
+                  <img src="./assets/images/people/2.jpg" class="mr-3 rounded-full w-20" alt="..." width="80"
+                    height="80">
+                  <div>
+                    <h4 class="font-semibold text-blue-600">Алина</h4>
+                    <h5 class="font-medium leading-tight text-sm">Founder</h5>
+                  </div>
+                </div>
+                <svg viewBox="0 0 24 24" fill="currentColor"
+                  class="absolute bottom-0 h-12 inline-block mb-4 mr-6 right-0 text-gray-300 w-12">
+                  <path
+                    d="M19.417 6.679C20.447 7.773 21 9 21 10.989c0 3.5-2.457 6.637-6.03 8.188l-.893-1.378c3.335-1.804 3.987-4.145 4.247-5.621-.537.278-1.24.375-1.929.311-1.804-.167-3.226-1.648-3.226-3.489a3.5 3.5 0 0 1 3.5-3.5c1.073 0 2.099.49 2.748 1.179zm-10 0C10.447 7.773 11 9 11 10.989c0 3.5-2.457 6.637-6.03 8.188l-.893-1.378c3.335-1.804 3.987-4.145 4.247-5.621-.537.278-1.24.375-1.929.311C4.591 12.322 3.17 10.841 3.17 9a3.5 3.5 0 0 1 3.5-3.5c1.073 0 2.099.49 2.748 1.179z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="flex-grow-0 flex-shrink-0 overflow-hidden relative w-full lg:w-6/12" data-slider-elem="pgia-slide"
+            data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;no&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;#gt#div&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0.4,&quot;d&quot;:0.6,&quot;l&quot;:{&quot;autoAlpha&quot;:1},&quot;e&quot;:&quot;Linear.easeNone&quot;}]}],&quot;desc&quot;:&quot;Show the content of the slide. Customize this animation to reveal the content.&quot;},&quot;rstr&quot;:&quot;true&quot;,&quot;po&quot;:&quot;true&quot;,&quot;pol&quot;:&quot;HideContent&quot;,&quot;name&quot;:&quot;ShowContent&quot;},{&quot;name&quot;:&quot;HideContent&quot;,&quot;trg&quot;:&quot;no&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;#gt#div&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.1,&quot;l&quot;:{&quot;autoAlpha&quot;:0}}]}],&quot;desc&quot;:&quot;Hide the content of the slide. Customize this animation to reveal the content.&quot;},&quot;rstr&quot;:&quot;true&quot;,&quot;po&quot;:&quot;true&quot;,&quot;pol&quot;:&quot;ShowContent&quot;}]}"
+            data-pg-ia-scene="{&quot;dir&quot;:&quot;a&quot;,&quot;s&quot;:&quot;custom&quot;,&quot;s_t&quot;:&quot;start&quot;,&quot;s_s&quot;:&quot;end&quot;,&quot;e_t&quot;:&quot;end&quot;,&quot;e_s&quot;:&quot;start&quot;,&quot;l&quot;:[{&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;HideContent&quot;}}},{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0.5,&quot;d&quot;:9,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;ShowContent&quot;}}},{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:9.5,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;HideContent&quot;}}}]}]},&quot;p&quot;:&quot;scroll&quot;,&quot;sc_dir&quot;:&quot;up_down&quot;,&quot;rep&quot;:&quot;true&quot;}]}">
+            <div data-pg-ia-hide="" class="p-4" style="opacity: 0; visibility: hidden;">
+              <div class="bg-white p-10 relative rounded-lg shadow-lg">
+                <p class="font-light mb-5">
+                  Долго думала как отпразновать годовщину свадьбы. Увидела фото ваших локаций и влюбилась!
+                  Отлично провели время с мужем, сделали кучу фото для инстаграмма и даже распечатали несколько на
+                  память)</p>
+                <div class="flex items-center">
+                  <img src="./assets/images/people/8.jpg" class="mr-3 rounded-full w-20" alt="..." width="80"
+                    height="80">
+                  <div>
+                    <h4 class="font-semibold text-blue-600">Марина</h4>
+                    <h5 class="font-medium leading-tight text-sm">Chief Technology Officer</h5>
+                  </div>
+                </div>
+                <svg viewBox="0 0 24 24" fill="currentColor"
+                  class="absolute bottom-0 h-12 inline-block mb-4 mr-6 right-0 text-gray-300 w-12">
+                  <path
+                    d="M19.417 6.679C20.447 7.773 21 9 21 10.989c0 3.5-2.457 6.637-6.03 8.188l-.893-1.378c3.335-1.804 3.987-4.145 4.247-5.621-.537.278-1.24.375-1.929.311-1.804-.167-3.226-1.648-3.226-3.489a3.5 3.5 0 0 1 3.5-3.5c1.073 0 2.099.49 2.748 1.179zm-10 0C10.447 7.773 11 9 11 10.989c0 3.5-2.457 6.637-6.03 8.188l-.893-1.378c3.335-1.804 3.987-4.145 4.247-5.621-.537.278-1.24.375-1.929.311C4.591 12.322 3.17 10.841 3.17 9a3.5 3.5 0 0 1 3.5-3.5c1.073 0 2.099.49 2.748 1.179z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="flex-grow-0 flex-shrink-0 overflow-hidden relative w-full lg:w-6/12" data-slider-elem="pgia-slide"
+            data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;no&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;#gt#div&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0.4,&quot;d&quot;:0.6,&quot;l&quot;:{&quot;autoAlpha&quot;:1},&quot;e&quot;:&quot;Linear.easeNone&quot;}]}],&quot;desc&quot;:&quot;Show the content of the slide. Customize this animation to reveal the content.&quot;},&quot;rstr&quot;:&quot;true&quot;,&quot;po&quot;:&quot;true&quot;,&quot;pol&quot;:&quot;HideContent&quot;,&quot;name&quot;:&quot;ShowContent&quot;},{&quot;name&quot;:&quot;HideContent&quot;,&quot;trg&quot;:&quot;no&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;#gt#div&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.1,&quot;l&quot;:{&quot;autoAlpha&quot;:0}}]}],&quot;desc&quot;:&quot;Hide the content of the slide. Customize this animation to reveal the content.&quot;},&quot;rstr&quot;:&quot;true&quot;,&quot;po&quot;:&quot;true&quot;,&quot;pol&quot;:&quot;ShowContent&quot;}]}"
+            data-pg-ia-scene="{&quot;dir&quot;:&quot;a&quot;,&quot;s&quot;:&quot;custom&quot;,&quot;s_t&quot;:&quot;start&quot;,&quot;s_s&quot;:&quot;end&quot;,&quot;e_t&quot;:&quot;end&quot;,&quot;e_s&quot;:&quot;start&quot;,&quot;l&quot;:[{&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;HideContent&quot;}}},{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0.5,&quot;d&quot;:9,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;ShowContent&quot;}}},{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:9.5,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;HideContent&quot;}}}]}]},&quot;p&quot;:&quot;scroll&quot;,&quot;sc_dir&quot;:&quot;up_down&quot;,&quot;rep&quot;:&quot;true&quot;}]}">
+            <div data-pg-ia-hide="" class="p-4" style="opacity: 1; visibility: inherit;">
+              <div class="bg-white p-10 relative rounded-lg shadow-lg">
+                <p class="font-light mb-5">Всё очень понравилось.
+                  Воспользовались с девочками услугами вашего фотографа Ильи, теперь фотаемся только у него!</p>
+                <div class="flex items-center">
+                  <img src="./assets/images/people/6.jpg" class="mr-3 rounded-full w-20" alt="..." width="80"
+                    height="80">
+                  <div>
+                    <h4 class="font-semibold text-blue-600">Алена и Ко</h4>
+                    <h5 class="font-medium leading-tight text-sm">Founder</h5>
+                  </div>
+                </div>
+                <svg viewBox="0 0 24 24" fill="currentColor"
+                  class="absolute bottom-0 h-12 inline-block mb-4 mr-6 right-0 text-gray-300 w-12">
+                  <path
+                    d="M19.417 6.679C20.447 7.773 21 9 21 10.989c0 3.5-2.457 6.637-6.03 8.188l-.893-1.378c3.335-1.804 3.987-4.145 4.247-5.621-.537.278-1.24.375-1.929.311-1.804-.167-3.226-1.648-3.226-3.489a3.5 3.5 0 0 1 3.5-3.5c1.073 0 2.099.49 2.748 1.179zm-10 0C10.447 7.773 11 9 11 10.989c0 3.5-2.457 6.637-6.03 8.188l-.893-1.378c3.335-1.804 3.987-4.145 4.247-5.621-.537.278-1.24.375-1.929.311C4.591 12.322 3.17 10.841 3.17 9a3.5 3.5 0 0 1 3.5-3.5c1.073 0 2.099.49 2.748 1.179z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="flex-grow-0 flex-shrink-0 overflow-hidden relative w-full lg:w-6/12" data-slider-elem="pgia-slide"
+            data-pg-ia="{&quot;l&quot;:[{&quot;trg&quot;:&quot;no&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;#gt#div&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0.4,&quot;d&quot;:0.6,&quot;l&quot;:{&quot;autoAlpha&quot;:1},&quot;e&quot;:&quot;Linear.easeNone&quot;}]}],&quot;desc&quot;:&quot;Show the content of the slide. Customize this animation to reveal the content.&quot;},&quot;rstr&quot;:&quot;true&quot;,&quot;po&quot;:&quot;true&quot;,&quot;pol&quot;:&quot;HideContent&quot;,&quot;name&quot;:&quot;ShowContent&quot;},{&quot;name&quot;:&quot;HideContent&quot;,&quot;trg&quot;:&quot;no&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;#gt#div&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.1,&quot;l&quot;:{&quot;autoAlpha&quot;:0}}]}],&quot;desc&quot;:&quot;Hide the content of the slide. Customize this animation to reveal the content.&quot;},&quot;rstr&quot;:&quot;true&quot;,&quot;po&quot;:&quot;true&quot;,&quot;pol&quot;:&quot;ShowContent&quot;}]}"
+            data-pg-ia-scene="{&quot;dir&quot;:&quot;a&quot;,&quot;s&quot;:&quot;custom&quot;,&quot;s_t&quot;:&quot;start&quot;,&quot;s_s&quot;:&quot;end&quot;,&quot;e_t&quot;:&quot;end&quot;,&quot;e_s&quot;:&quot;start&quot;,&quot;l&quot;:[{&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;HideContent&quot;}}},{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0.5,&quot;d&quot;:9,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;ShowContent&quot;}}},{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:9.5,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;HideContent&quot;}}}]}]},&quot;p&quot;:&quot;scroll&quot;,&quot;sc_dir&quot;:&quot;up_down&quot;,&quot;rep&quot;:&quot;true&quot;}]}">
+            <div data-pg-ia-hide="" class="p-4" style="opacity: 0; visibility: hidden;">
+              <div class="bg-white p-10 relative rounded-lg shadow-lg">
+                <p class="font-light mb-5">Уже не первый раз устраиваю себе праздник, организуя фотосессию в ваших
+                  локациях. Не дорого, а эмоций на весь день память</p>
+                <div class="flex items-center">
+                  <img src="./assets/images/people/5.jpg" class="mr-3 rounded-full w-20" alt="..." width="80"
+                    height="80">
+                  <div>
+                    <h4 class="font-semibold text-blue-600">Наталия</h4>
+                    <h5 class="font-medium leading-tight text-sm">Administrative Manager</h5>
+                  </div>
+                </div>
+                <svg viewBox="0 0 24 24" fill="currentColor"
+                  class="absolute bottom-0 h-12 inline-block mb-4 mr-6 right-0 text-gray-300 w-12">
+                  <path
+                    d="M19.417 6.679C20.447 7.773 21 9 21 10.989c0 3.5-2.457 6.637-6.03 8.188l-.893-1.378c3.335-1.804 3.987-4.145 4.247-5.621-.537.278-1.24.375-1.929.311-1.804-.167-3.226-1.648-3.226-3.489a3.5 3.5 0 0 1 3.5-3.5c1.073 0 2.099.49 2.748 1.179zm-10 0C10.447 7.773 11 9 11 10.989c0 3.5-2.457 6.637-6.03 8.188l-.893-1.378c3.335-1.804 3.987-4.145 4.247-5.621-.537.278-1.24.375-1.929.311C4.591 12.322 3.17 10.841 3.17 9a3.5 3.5 0 0 1 3.5-3.5c1.073 0 2.099.49 2.748 1.179z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-slider-elem="pgia-controls"><a href="#"
+            class="absolute bottom-0 flex group h-full hover:text-white items-center justify-center left-0 p-1 text-gray-800"
+            data-scroll-to="prev"
+            data-pg-ia="{&quot;l&quot;:[{&quot;name&quot;:&quot;ScrollTo&quot;,&quot;trg&quot;:&quot;click&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;^[data-slider-name=pgia-slider]&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;Goto${target.data-scroll-to}&quot;}}}]}]},&quot;pdef&quot;:&quot;true&quot;}]}"
+            data-pg-ia-apply="^[data-slider-name=pgia-slider]|[data-scroll-to]"><span
+              class="bg-gray-200 group-hover:bg-blue-600 inline-block p-1 rounded-full"><svg viewBox="0 0 24 24"
+                fill="currentColor" class="h-6 w-6">
+                <path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"></path>
+              </svg></span> </a>
+          <div class="flex justify-center mt-6 py-2 space-x-1 text-center" data-slider-elem="pgia-pagination"><a
+              href="#"
+              data-pg-ia="{&quot;l&quot;:[{&quot;name&quot;:&quot;ScrollToSlide&quot;,&quot;trg&quot;:&quot;click&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;^[data-slider-name=pgia-slider]|[data-slider-elem=pgia-slides-container]&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;scrollTo&quot;:{&quot;dest&quot;:&quot;item&quot;}}}]}]},&quot;pdef&quot;:&quot;true&quot;},{&quot;trg&quot;:&quot;no&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;span&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.2,&quot;l&quot;:{&quot;class.add&quot;:&quot;bg-blue-600&quot;}},{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.2,&quot;l&quot;:{&quot;class.add&quot;:&quot;w-8&quot;}}]}],&quot;desc&quot;:&quot;Customize the active item animation.&quot;},&quot;name&quot;:&quot;Current&quot;}]}"
+              class="group inline-block py-3" data-slider-elem="pgia-pagination-item" aria-label="slider dot"
+              data-item-idx="0"><span
+                class="bg-gray-400 block group-hover:bg-blue-600 h-1 rounded-full transition-all w-6"></span></a>
+            <a href="#"
+              data-pg-ia="{&quot;l&quot;:[{&quot;name&quot;:&quot;ScrollToSlide&quot;,&quot;trg&quot;:&quot;click&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;^[data-slider-name=pgia-slider]|[data-slider-elem=pgia-slides-container]&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;scrollTo&quot;:{&quot;dest&quot;:&quot;item&quot;}}}]}]},&quot;pdef&quot;:&quot;true&quot;},{&quot;trg&quot;:&quot;no&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;span&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.2,&quot;l&quot;:{&quot;class.add&quot;:&quot;bg-blue-600&quot;}},{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.2,&quot;l&quot;:{&quot;class.add&quot;:&quot;w-8&quot;}}]}],&quot;desc&quot;:&quot;Customize the active item animation.&quot;},&quot;name&quot;:&quot;Current&quot;}]}"
+              class="group inline-block py-3 pgia-clone" data-slider-elem="pgia-pagination-item" aria-label="slider dot"
+              data-item-idx="1"><span
+                class="bg-gray-400 block group-hover:bg-blue-600 h-1 rounded-full transition-all w-6"></span></a><a
+              href="#"
+              data-pg-ia="{&quot;l&quot;:[{&quot;name&quot;:&quot;ScrollToSlide&quot;,&quot;trg&quot;:&quot;click&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;^[data-slider-name=pgia-slider]|[data-slider-elem=pgia-slides-container]&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;scrollTo&quot;:{&quot;dest&quot;:&quot;item&quot;}}}]}]},&quot;pdef&quot;:&quot;true&quot;},{&quot;trg&quot;:&quot;no&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;span&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.2,&quot;l&quot;:{&quot;class.add&quot;:&quot;bg-blue-600&quot;}},{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.2,&quot;l&quot;:{&quot;class.add&quot;:&quot;w-8&quot;}}]}],&quot;desc&quot;:&quot;Customize the active item animation.&quot;},&quot;name&quot;:&quot;Current&quot;}]}"
+              class="group inline-block py-3 pgia-clone" data-slider-elem="pgia-pagination-item" aria-label="slider dot"
+              data-item-idx="2"><span
+                class="bg-gray-400 block group-hover:bg-blue-600 h-1 rounded-full transition-all w-6"></span></a><a
+              href="#"
+              data-pg-ia="{&quot;l&quot;:[{&quot;name&quot;:&quot;ScrollToSlide&quot;,&quot;trg&quot;:&quot;click&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;^[data-slider-name=pgia-slider]|[data-slider-elem=pgia-slides-container]&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;scrollTo&quot;:{&quot;dest&quot;:&quot;item&quot;}}}]}]},&quot;pdef&quot;:&quot;true&quot;},{&quot;trg&quot;:&quot;no&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;span&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.2,&quot;l&quot;:{&quot;class.add&quot;:&quot;bg-blue-600&quot;}},{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.2,&quot;l&quot;:{&quot;class.add&quot;:&quot;w-8&quot;}}]}],&quot;desc&quot;:&quot;Customize the active item animation.&quot;},&quot;name&quot;:&quot;Current&quot;}]}"
+              class="group inline-block py-3 pgia-clone" data-slider-elem="pgia-pagination-item" aria-label="slider dot"
+              data-item-idx="3"><span
+                class="bg-gray-400 block group-hover:bg-blue-600 h-1 rounded-full transition-all w-6 bg-blue-600 w-8"></span></a><a
+              href="#"
+              data-pg-ia="{&quot;l&quot;:[{&quot;name&quot;:&quot;ScrollToSlide&quot;,&quot;trg&quot;:&quot;click&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;^[data-slider-name=pgia-slider]|[data-slider-elem=pgia-slides-container]&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;scrollTo&quot;:{&quot;dest&quot;:&quot;item&quot;}}}]}]},&quot;pdef&quot;:&quot;true&quot;},{&quot;trg&quot;:&quot;no&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;span&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.2,&quot;l&quot;:{&quot;class.add&quot;:&quot;bg-blue-600&quot;}},{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.2,&quot;l&quot;:{&quot;class.add&quot;:&quot;w-8&quot;}}]}],&quot;desc&quot;:&quot;Customize the active item animation.&quot;},&quot;name&quot;:&quot;Current&quot;}]}"
+              class="group inline-block py-3 pgia-clone" data-slider-elem="pgia-pagination-item" aria-label="slider dot"
+              data-item-idx="4"><span
+                class="bg-gray-400 block group-hover:bg-blue-600 h-1 rounded-full transition-all w-6"></span></a><a
+              href="#"
+              data-pg-ia="{&quot;l&quot;:[{&quot;name&quot;:&quot;ScrollToSlide&quot;,&quot;trg&quot;:&quot;click&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;^[data-slider-name=pgia-slider]|[data-slider-elem=pgia-slides-container]&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;scrollTo&quot;:{&quot;dest&quot;:&quot;item&quot;}}}]}]},&quot;pdef&quot;:&quot;true&quot;},{&quot;trg&quot;:&quot;no&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;span&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.2,&quot;l&quot;:{&quot;class.add&quot;:&quot;bg-blue-600&quot;}},{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.2,&quot;l&quot;:{&quot;class.add&quot;:&quot;w-8&quot;}}]}],&quot;desc&quot;:&quot;Customize the active item animation.&quot;},&quot;name&quot;:&quot;Current&quot;}]}"
+              class="group inline-block py-3 pgia-clone" data-slider-elem="pgia-pagination-item" aria-label="slider dot"
+              data-item-idx="5"><span
+                class="bg-gray-400 block group-hover:bg-blue-600 h-1 rounded-full transition-all w-6"></span></a>
+          </div><a href="#"
+            class="absolute bottom-0 flex group h-full hover:text-white items-center justify-center p-1 right-0 text-gray-800"
+            data-scroll-to="next"
+            data-pg-ia="{&quot;l&quot;:[{&quot;name&quot;:&quot;ScrollTo&quot;,&quot;trg&quot;:&quot;click&quot;,&quot;a&quot;:{&quot;l&quot;:[{&quot;t&quot;:&quot;^[data-slider-name=pgia-slider]&quot;,&quot;l&quot;:[{&quot;t&quot;:&quot;tween&quot;,&quot;p&quot;:0,&quot;d&quot;:0.5,&quot;l&quot;:{&quot;pgia&quot;:{&quot;play&quot;:&quot;Goto${target.data-scroll-to}&quot;}}}]}]},&quot;pdef&quot;:&quot;true&quot;}]}"><span
+              class="bg-gray-200 group-hover:bg-blue-600 inline-block p-1 rounded-full"><svg viewBox="0 0 24 24"
+                fill="currentColor" class="h-6 w-6">
+                <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"></path>
+              </svg></span> </a>
+        </div>
+        <div class="absolute h-3 left-0 top-0 w-full" data-slider-elem="pgia-progress"
+          style="opacity: 1; visibility: inherit;">
+          <div class="bg-white h-full opacity-50" data-slider-elem="pgia-progress-bar" style="width: 90.4515%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- форма поиска -->
+  <section class="bg-gray-50 pg-lib-item py-24 text-gray-500">
+    <div class="container mx-auto px-4">
+      <div class="bg-white p-10 shadow-xl sm:p-16">
+        <h2 class="font-medium mb-6 text-4xl text-gray-800">Поиск</h2>
+        <form>
+          <div class="mb-6">
+            <label for="">Выбор региона</label>
+            <input class="appearance-none border-2 border-blue-600 focus:shadow-lg outline-none px-5 py-3 w-full"
+              placeholder="Введите регион...">
+          </div>
+          <div class="mb-6">
+            <label for="">Дата и время съемки</label>
+            <input class="appearance-none border-2 border-blue-600 focus:shadow-lg outline-none px-5 py-3 w-full"
+              placeholder="Введите дату и время...">
+          </div>
+          <div class="mb-6">
+            <label for="">Количество участников</label>
+            <input class="appearance-none border-2 border-blue-600 focus:shadow-lg outline-none px-5 py-3 w-full"
+              placeholder="Введите количество участников...">
+          </div>
+          <button type="submit"
+            class="bg-blue-600 font-medium hover:bg-blue-700 inline-block p-3 text-center text-white uppercase w-full">Поиск</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Акции -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/ w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Акции</h1>
+          <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class=" xl:w-1/3 md:w-1/2 p-4 ">
+          <div class="h-full bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="./assets/images/promotions/promotion1.jpg" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Акция</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Скидка до 60%</h2>
+            <p class="leading-relaxed text-base">За заказ зоны (до 5 человек) в локации «Черная жемчужина»</p>
+            <button
+            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Подробнее</button>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="h-full bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="./assets/images/promotions/promotion2.jpg" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Акция</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Скидка до 51% </h2>
+            <p class="leading-relaxed text-base">при заказе услуг фотографа и использовании реквизита локации. Уютное место для организации детской фото-видео съемки «Поляна сказок»</p>
+            <button
+            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Подробнее</button>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="h-full bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="./assets/images/promotions/promotion3.jpg" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Акция</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Скидка до 25%</h2>
+            <p class="leading-relaxed text-base">Закажи праздник "Под ключ"</p>
+            <button
+            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Подробнее</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Подписка -->
+
+  <!-- Подвал -->
+  <script src="./assets/js/pgia.js"></script>
+</body>
+
+</html>
